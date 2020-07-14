@@ -1,0 +1,18 @@
+[package]
+name = "advent_of_code_14"
+version = "0.1.0"
+authors = ["Fillwave <filipwasil@saferendering.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+Computer = { path = "./libs/Computer"}
+Utils = { path = "./libs/Utils"}
+itertools = "0.8.2"
+
+[workspace]
+members = [
+  "libs/Computer",
+  "libs/Utils",
+]
